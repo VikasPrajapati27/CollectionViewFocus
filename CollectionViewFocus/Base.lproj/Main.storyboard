@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CollectionViewFocus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7Ag-cd-aRU">
+                                <color key="backgroundColor" red="0.90588235289999997" green="0.87450980389999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JAw-nX-Dlt">
+                                    <size key="itemSize" width="676" height="293"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FocusCollectionViewCell" id="4Lt-7H-j84" customClass="FocusCollectionViewCell" customModule="CollectionViewFocus" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="676" height="293"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="676" height="293"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUG-nw-ZZR">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="qYq-Wy-MZ5"/>
+                                                        <constraint firstAttribute="width" constant="250" id="zTA-t0-atA"/>
+                                                    </constraints>
+                                                    <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                    <state key="normal" title="Second"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvs-bb-cSZ">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="250" id="5eS-9x-0C0"/>
+                                                        <constraint firstAttribute="height" constant="100" id="SUr-81-1GI"/>
+                                                    </constraints>
+                                                    <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                    <state key="normal" title="First"/>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="rvs-bb-cSZ" secondAttribute="bottom" constant="50" id="51e-0y-Q5C"/>
+                                            <constraint firstItem="fUG-nw-ZZR" firstAttribute="leading" secondItem="rvs-bb-cSZ" secondAttribute="trailing" constant="50" id="htr-3F-9IY"/>
+                                            <constraint firstAttribute="bottom" secondItem="fUG-nw-ZZR" secondAttribute="bottom" constant="50" id="tOp-Ps-LVE"/>
+                                            <constraint firstItem="rvs-bb-cSZ" firstAttribute="leading" secondItem="4Lt-7H-j84" secondAttribute="leading" constant="50" id="y7I-Co-s6R"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="btnFirst" destination="rvs-bb-cSZ" id="b3d-mW-5PJ"/>
+                                            <outlet property="btnSecond" destination="fUG-nw-ZZR" id="jVW-MX-81n"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7Ag-cd-aRU" secondAttribute="trailing" id="8ri-yo-nSE"/>
+                            <constraint firstItem="7Ag-cd-aRU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="AoM-vN-5Qg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7Ag-cd-aRU" secondAttribute="bottom" id="D1v-pB-phM"/>
+                            <constraint firstItem="7Ag-cd-aRU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lJg-cq-v7H"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cvList" destination="7Ag-cd-aRU" id="SlF-q5-rD5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1037" y="-2797"/>
+        </scene>
+    </scenes>
+</document>
