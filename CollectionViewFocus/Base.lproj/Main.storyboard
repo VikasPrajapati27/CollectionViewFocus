@@ -35,6 +35,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUG-nw-ZZR">
+                                                    <color key="backgroundColor" red="0.31372549020000001" green="0.63137254899999995" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="100" id="qYq-Wy-MZ5"/>
                                                         <constraint firstAttribute="width" constant="250" id="zTA-t0-atA"/>
@@ -43,6 +44,7 @@
                                                     <state key="normal" title="Second"/>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvs-bb-cSZ">
+                                                    <color key="backgroundColor" red="0.4549019608" green="0.36078431370000003" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="250" id="5eS-9x-0C0"/>
                                                         <constraint firstAttribute="height" constant="100" id="SUr-81-1GI"/>
