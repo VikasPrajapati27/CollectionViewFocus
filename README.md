@@ -9,8 +9,10 @@ Now, In tv-os application developement you can not move focus at button(which is
 
 You can use this library for move focus at button and Cell viceVersa
 
-##  How to use it:
+## Preview :
+<img src="https://github.com/VikasPrajapati27/CollectionViewFocus/blob/master/CollectionViewFocus.gif" width="420"/>
 
+##  How to use it:
 Put this code in your collectionViewCell file, i have two button in collectionViewCell and i am able to move focas in butoon and cell vice versa.
 
 <code>
@@ -74,4 +76,3 @@ Put this code in your collectionViewCell file, i have two button in collectionVi
         }
     }
 </code>
-
